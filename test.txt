@@ -1,0 +1,28 @@
+dans le répertoire Test/ : $ git status
+créer et/ou modifier un/des fichier(s)
+$ git status
+$ git diff
+→ différences entre espace de travail et INDEX
+$ git diff --word-diff
+$ git add fichier(s)
+$ git status
+$ git diff
+$ git diff --cached
+→ différences entre INDEX et le dépôt
+$ git commit
+→ un éditeur de texte est lancé, il faut saisir le message de commit, enregistrer et quitter
+éditeur vi : <Echap> :wq
+$ git status
+variante : $ git commit -a
+→ fait automatiquement un "git add" pour les fichiers déjà suivis
+variante : $ git commit -m "Message de commit..."
+revoir les commits : $ gitk
+voir le dernier commit : $ git show
+voir tous les commits : $ git log
+variante : $ git log -p
+variante : $ git log --stat --summary
+variante : $ git log --oneline
+envoyer les commits vers le serveur distant : $ git push
+récupérer les commits depuis le serveur distant : $ git fetch
+récupérer les commits et intégrer les modifications : $ git pull
+→ équivalent à "git fetch" suivi de "git merge"
